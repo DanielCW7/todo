@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.head,
+.subHeading {
+  height: 100px;
+  background-color: #333;
+  color: whitesmoke;
+  margin-bottom: 15px;
+  margin-top: 0;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-heading {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.todo-list {
+  background-color: white;
+  margin: auto;
+  margin-top: 30px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #efefef;
+  box-shadow:
+  /* The top layer shadow */
+      0 1px 1px rgba(0,0,0,0.15),
+          /* The second layer */
+      0 10px 0 -5px #eee,
+          /* The second layer shadow */
+      0 10px 1px -4px rgba(0,0,0,0.15),
+          /* The third layer */
+      0 20px 0 -10px #eee,
+          /* The third layer shadow */
+      0 20px 1px -9px rgba(0,0,0,0.15);
+  padding: 30px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 20px;
+  width: 80%;
+  border-bottom: 1px solid #cecece;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: #333333;
+}
+
+input[type=checkbox]{
+  margin-right: 30px;
+  font-size: 30px;
+}
+
+input[type=checkbox]:focus {
+  outline: 0;
+}
+
+.checked {
+  color: rgb(161, 161, 161);
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-add {
+  text-align: center;
+  background: rgb(40, 106, 204);
+  color: white;
+  height: 50px;
+  margin-bottom: 40px;
+  border-style: none;
+  border-radius: 0px 20px 20px 20px;
+  padding: 1em;
+  width: 50%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    transition: all 0.17s;
+  outline: none;
+}
+
+.button-add:hover {
+  background: rgb(50, 132, 255);
+}
+
+.button-remove {
+  margin-left: auto;
+}
+
+.search {
+  margin: 20px;
+  width: 90%;
+  height: 50px;
+  border: 3px solid rgb(196, 196, 196);
+  transition: all 0.3s;
+  padding: 2px 5px;
+  outline: none;
+}
+
+.search:focus {
+  border: 3px solid rgb(92, 92, 92);
+}
+
+label {
+  text-overflow: normal;
+  width: 80%;
+}
+
+@media (min-width: 768px) {
+  .todo-list {
+    width: 70%;
+  }
+
+  .todo-item {
+    width: 70%;
+  }
+
+  .search {
+    width: 70%;
+  }
+
+  .button-add {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .todo-list {
+    width: 70%;
+  }
+
+  .todo-item {
+    width: 70%;
+  }
+
+  .search {
+    width: 70%;
+  }
+
+  .button-add {
+    width: 15%;
+  }
+}
+
+@media (min-width: 1660px) {
+  .todo-list {
+    width: 50%;
+  }
+
+  .todo-item {
+    width: 60%;
+  }
+
+  .search {
+    width: 50%;
+  }
+
+  .button-add {
+    width: 140px;
+  }
+}
